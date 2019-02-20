@@ -18,12 +18,11 @@ A recommended directory structure is as follows:
 1. download a modern version of eclipse. This should have maven and git included by default.
 1. `file->import->git->projects from git->clone URI` and clone as specified above.  _It will go through a 
 sequence of windows; it is important that you import as 'general project'._
-1. `file->import->maven->existing maven projects`
+1. right-click on the project directory to `configure->convert to maven project`.  
 
-Sometimes, step 3 does not work, in particular after previously failed attempts.  Sometimes, it is possible to
-right-click to `configure->convert to maven project`.  If that fails, the best thing seems to remove all 
-pieces of the failed attempt in the directory and start over.
+To run the model: 
 
-### Import into IntelliJ
-
-... todo ...
+1. right-click on MATSimGUI.java in the folder src/main/java, org.matsim.gui and 
+select Run As > Java Application.
+1. Next to configuration file, select Choose and double-click the scenarios folder, RunCarshringIT, 
+and config.xml. The output directory should be automatically set. Click Start MATSim to start the model.
